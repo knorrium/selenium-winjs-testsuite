@@ -1,0 +1,29 @@
+{
+  "name": "selenium-winjs-testsuite",
+  "version": "0.0.1",
+  "description": "A test suite to validate our WinJS driver",
+  "main": "app.js",
+  "dependencies": {
+    "wd": "0.0.21"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "selenium",
+    "acceptance",
+    "driver",
+    "jsonwire",
+    "testing",
+    "automation"
+  ],
+  "author": "Felipe Knorr Kuhn <contact@knorrium.info> (http://knorrium.info)",
+  
+  "contributors": [
+        "Alexandre Gaigalas <alexandre@gaigalas.net> (http://about.me/alganet)",
+        "Iraê <irae@irae.pro.br>"      
+    ],
+  "license": "BSD"
+}
