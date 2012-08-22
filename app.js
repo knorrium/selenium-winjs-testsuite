@@ -12,9 +12,9 @@ browser.on('command', function(meth, path){
 });
  
 browser.init({
-    browserName:'firefox'
-    , tags : ["examples"]
-    , name: "This is an example test"
+    browserName:'firefox',
+    tags : ["examples"],
+    name: "This is an example test"
 }, function() {
  
     browser.get("http://saucelabs.com/test/guinea-pig", function() {
@@ -24,7 +24,7 @@ browser.init({
         el.sendKeys("this is not a comment", function(err) {
             browser.elementById('submit', function(err, el) {
             el.click(function() {
-                browser.eval("window.location.href", function(err, title) {
+                browser['eval']("window.location.href", function(err, title) {
                 assert.ok(~title.indexOf('#'), 'Wrong title!');
                 browser.elementById("your_comments", function(err, el) {
                     el.textPresent("this is not a comment", function(err, present) {
@@ -32,14 +32,14 @@ browser.init({
                     el.text(function(err, text) {
                         console.log(text);
                         browser.quit();
-                    })
-                    })
-                })
-                })
-            })
-            })
-        })
-        })
-    })
-    })
+                    });
+                    });
+                });
+                });
+            });
+            });
+        });
+        });
+    });
+    });
 });
